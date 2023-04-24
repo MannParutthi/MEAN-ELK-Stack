@@ -1,0 +1,16 @@
+.dashboard-container {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.dashboard-content {
+  width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+
+.dashboard-toolbar {
+  justify-content: center;
+}

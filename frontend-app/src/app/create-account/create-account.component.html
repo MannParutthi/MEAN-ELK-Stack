@@ -1,0 +1,39 @@
+<div class="create-account-container">
+  <div class="create-account-content">
+    <mat-toolbar class="create-account-toolbar" color="primary">Create Account</mat-toolbar>
+    <mat-card>
+      <form [formGroup]="createAccountFormGroup">
+
+        <mat-form-field appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input matInput autofocus type="text" placeholder="First Name" formControlName="firstName" id="firstName">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Last Name</mat-label>
+          <input matInput type="text" placeholder="Last Name" formControlName="lastName" id="lastName">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>User Name</mat-label>
+          <input matInput type="text" placeholder="Username" formControlName="username" id="username">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" autocomplete="false" placeholder="Password" formControlName="password" id="password">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Confirm Password</mat-label>
+          <input matInput type="password" autocomplete="false" placeholder="Confirm Password" formControlName="confirmPassword" id="confirmPassword">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="onCreateAccount()" id="createAccountBtn">Create Account</button>
+
+        <button mat-raised-button color="secondary" (click)="onLogin()">Login</button>
+
+      </form>
+    </mat-card>
+  </div>
+</div>

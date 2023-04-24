@@ -1,0 +1,18 @@
+<div class="dashboard-container">
+  <div class="dashboard-content">
+    <mat-toolbar class="dashboard-toolbar" color="primary">Dashboard</mat-toolbar>
+    <mat-card>
+      Your Current Session Start Time:
+      <mat-list>
+        <mat-list-item *ngFor="let login of logins">
+          <mat-icon matListIcon>account_circle</mat-icon>
+          <p matLine>
+            <span>Date: {{login.date}} & Time: {{login.time}}</span>
+          </p>
+        </mat-list-item>
+      </mat-list>
+
+      <button mat-raised-button color="primary" (click)="onLogout()" id="logoutBtn">Log Out</button>
+    </mat-card>
+  </div>
+</div>
